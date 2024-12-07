@@ -1,0 +1,36 @@
+var _path, _rect;
+function _extends() { _extends = Object.assign ? Object.assign.bind() : function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+import * as React from "react";
+function SvgArrowFillRight(_ref, svgRef) {
+  let {
+    title,
+    titleId,
+    ...props
+  } = _ref;
+  return /*#__PURE__*/React.createElement("svg", _extends({
+    width: 40,
+    height: 40,
+    viewBox: "0 0 40 40",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg",
+    ref: svgRef,
+    "aria-labelledby": titleId
+  }, props), title ? /*#__PURE__*/React.createElement("title", {
+    id: titleId
+  }, title) : null, _path || (_path = /*#__PURE__*/React.createElement("path", {
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M22 12L20.9 13.1L26.9 19.2H10V20.8H26.9L20.9 26.9L22 28L30 20L22 12Z",
+    fill: "#6A6872"
+  })), _rect || (_rect = /*#__PURE__*/React.createElement("rect", {
+    x: 0.5,
+    y: 0.5,
+    width: 39,
+    height: 39,
+    rx: 19.5,
+    stroke: "#434849"
+  })));
+}
+const ForwardRef = /*#__PURE__*/React.forwardRef(SvgArrowFillRight);
+export default __webpack_public_path__ + "static/media/arrow-fill-right.5bf28a3c.svg";
+export { ForwardRef as ReactComponent };
